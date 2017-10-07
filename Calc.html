@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="AngularDemos/angular.min.js"></script>
+    <script src="app.js"></script>
+    <script src="model.js"></script>
+    <script src="controller.js"></script>
+</head>
+<body ng-app="calcapp" ng-controller="calcctrl">
+    <input type="text" ng-model="firstno">  <!--to draw text box -->
+    <input type="text" ng-model="secondno">
+    <br><br>
+    <button ng-click="doadd()">+</button>
+    <button ng-click="dosub()">-</button>
+    <button ng-click="domul()">*</button>
+    <button ng-click="dodiv()">/</button>
+    <h1>{{myresult}}</h1>
+</body>
+</html>

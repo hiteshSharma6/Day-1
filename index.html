@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Greet App</title>
+    <!--command : script-->
+    <script src = "JS/greet.min.js"></script>
+</head>
+<body>
+<!--command : table>tr>td>label{First Name}-->
+<table>
+    <tr>
+        <td><label for="">First Name</label></td>
+        <td><input type="text"
+            id = "firstname"
+            placeholder="Type First Name Here"></td>
+    </tr>
+    <tr>
+        <td><label for="">Last Name</label></td>
+        <td><input type="text"
+            id = "lastname"
+            placeholder="Type Last Name Here"></td>
+    </tr>
+    <tr>
+        <td><button onclick = "sayWelcome()">GREET</button></td>
+        <td><button>CLEAR</button></td>
+    </tr>
+</table>
+<!--command : fieldset>legend{Output}-->
+<fieldset>
+    <legend>Output</legend>
+    <h1 id = "message"></h1>
+</fieldset>
+</body>
+</html>
